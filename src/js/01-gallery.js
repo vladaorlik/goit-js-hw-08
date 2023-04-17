@@ -28,6 +28,7 @@ galleryWrapp.append(...element);
 galleryWrapp.addEventListener('click', (e) => {
     e.preventDefault();
 })
+
 const simpleLightbox = new SimpleLightbox('.gallery a', {
     captions: true,
     captionDelay: 250,
