@@ -4,7 +4,6 @@ import { galleryItems } from './gallery-items';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-
 function createImgGallery  (item)  {
     return item.map(item => {
 
@@ -29,9 +28,10 @@ galleryWrapp.append(...element);
 galleryWrapp.addEventListener('click', (event) => {
     event.preventDefault();
 })
-const simpleLightbox = new SimpleLightbox('.gallery a', {
+new SimpleLightbox('.gallery a', {
     captions: true,
     captionDelay: 250,
     captionSelector: 'img',
     captionType: 'attr',
-    captionsData: 'alt', });
+    captionsData: 'alt',
+  });
